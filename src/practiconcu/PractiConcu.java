@@ -28,7 +28,9 @@ public class PractiConcu extends JPanel
     private final JTextArea parar;
     //Tarea a supervisar
     private Task tarea;
-
+    //Thread sobre el cual se realiza el proceso
+    private Thread t;
+    
     class Task extends SwingWorker<Void, Void> {
 
         @Override
